@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Cool Animations Zone 🌟</title>
+    <style>
+        body {
+            background-color: #000080;
+            color: #00ff00;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000000;
+            border: 5px solid #ff00ff;
+            padding: 20px;
+            box-shadow: 0 0 20px #00ffff;
+        }
+        h1 {
+            color: #ffff00;
+            text-shadow: 2px 2px #ff0000;
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .marquee {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #00ff00;
+            color: #000000;
+            padding: 10px 20px;
+            border: 3px solid #ffff00;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.2);
+            background-color: #ffff00;
+        }
+        .counter {
+            background-color: #000000;
+            color: #00ff00;
+            padding: 10px;
+            border: 2px solid #00ff00;
+            margin: 20px auto;
+            width: 200px;
+            animation: glow 2s infinite;
+        }
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px #00ff00; }
+            50% { box-shadow: 0 0 20px #00ff00; }
+        }
+        .construction {
+            margin: 20px 0;
+        }
+        .sparkle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('data:image/gif;base64,R0lGODlhGAAYAPQAAP///wAAAM7Ozvr6+uDg4LCwsOjo6I6OjsjIyJycnNjY2KioqMDAwPLy8nd3d4aGhri4uGlpaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBQAAACwAAAAAGAAYAAAFriAgjiQAQWVaDgr5POz6tdRZRGRyPcjCkOQnncuU4p+pDQx5DQzqaXfdhZRjv9hbnLT2X3cNmvqDWyXk9exPWF0zOi22l3hghatFbYS4lABcgZ4d1x2IZ8nZdd5oGolDgclAa+uIUEo1NGF5QeHQQEhoNCSmQEWY84459isqDqIAzNCiyIFloq54wqU0bM7Q70PHZi2jNZNyMyERB6kd1JpK5lJgcKChaGRlRq5ENqc1lRWI8UVTSzGzGBGjH9p271t99adngT4XJzxQC6VOg4Nns6OglyNp4xqjqpLg65ySqU6jgrhOuvD3u7V6NQkMLANZNPJ8PzupSL4WbgjsQIfwcRArg0gYMghZ0KkOcOaDhzF4w8xBu5uewp24A1a9C2WoQLkDxwN3bc0vgH4UsD6yLb0bNxg8VSR9HwcM0NNW3GHGw2R4xc24y/G8CN1hFmEds1vBeEoD4xPhLQ7XUEcRg1eENI9zxW3g7xIB6SbbO+MTwN8f/gZw7AIu3/AZq8IGPzCQKAAAOw==') no-repeat;
+            animation: sparkle 1.5s infinite;
+        }
+        @keyframes sparkle {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            50% { transform: scale(1) rotate(180deg); opacity: 1; }
+            100% { transform: scale(0) rotate(360deg); opacity: 0; }
+        }
+        .bouncing-box {
+            width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            border: 5px solid #00ffff;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welcome to Cool Animations Zone 🌟</h1>
+        
+        <div class="marquee">
+            <marquee>🔥 Welcome to the coolest animation website on the web! 🔥</marquee>
+        </div>
+
+        <img src="https://web.archive.org/web/20090829095850/http://geocities.com/Area51/Corridor/5177/under_construction.gif" alt="Under Construction" class="construction">
+
+        <p>🎮 Check out our awesome collection of animations! 🎮</p>
+
+        <div class="bouncing-box">
+            <canvas id="bouncingCanvas"></canvas>
+        </div>
+
+        <div>
+            <a href="#" class="button">Enter Site</a>
+            <a href="#" class="button">Guestbook</a>
+            <a href="#" class="button">Cool Links</a>
+        </div>
+
+        <div class="counter">
+            Visitors: 1337
+        </div>
+
+        <p>Best viewed in Netscape Navigator or Internet Explorer 5.0+</p>
+        
+        <img src="https://web.archive.org/web/20090829095850/http://geocities.com/Area51/Corridor/5177/ie_logo.gif" alt="IE Logo">
+        <img src="https://web.archive.org/web/20090829095850/http://geocities.com/Area51/Corridor/5177/netscape_logo.gif" alt="Netscape Logo">
+
+        <p>© 2000 Cool Animations Zone - All Rights Reserved</p>
+    </div>
+
+    <script>
+        // Add sparkle effects
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = Math.random() * window.innerWidth + 'px';
+            sparkle.style.top = Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 1500);
+        }
+
+        // Create sparkles periodically
+        setInterval(createSparkle, 300);
+
+        // Canvas setup
+        const canvas = document.getElementById('bouncingCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 300;
+
+        // Animation types
+        let currentAnimation = 'bouncing';
+        let particles = [];
+        let stars = [];
+        let waves = [];
+
+        // Particle class for explosion effect
+        class Particle {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.size = Math.random() * 3 + 2;
+                this.speedX = Math.random() * 6 - 3;
+                this.speedY = Math.random() * 6 - 3;
+                this.life = 1;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.life -= 0.02;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color}, ${this.life})`;
+                ctx.fill();
+            }
+        }
+
+        // Star class for starfield effect
+        class Star {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2;
+                this.speed = Math.random() * 2 + 1;
+            }
+
+            update() {
+                this.y += this.speed;
+                if (this.y > canvas.height) {
+                    this.y = 0;
+                    this.x = Math.random() * canvas.width;
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = '#ffffff';
+                ctx.fill();
+            }
+        }
+
+        // Wave class for wave effect
+        class Wave {
+            constructor(y) {
+                this.y = y;
+                this.amplitude = 20;
+                this.frequency = 0.02;
+                this.speed = 0.05;
+                this.offset = 0;
+            }
+
+            update() {
+                this.offset += this.speed;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.moveTo(0, this.y);
+                for (let x = 0; x < canvas.width; x++) {
+                    const y = this.y + Math.sin(x * this.frequency + this.offset) * this.amplitude;
+                    ctx.lineTo(x, y);
+                }
+                ctx.strokeStyle = '#00ffff';
+                ctx.stroke();
+            }
+        }
+
+        // Ball class (existing code)
+        class Ball {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.dx = (Math.random() - 0.5) * 8;
+                this.dy = (Math.random() - 0.5) * 8;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            update() {
+                if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+                    this.dx = -this.dx;
+                }
+                if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+                    this.dy = -this.dy;
+                }
+                this.x += this.dx;
+                this.y += this.dy;
+                this.draw();
+            }
+        }
+
+        // Create initial balls
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+        const balls = [];
+        for (let i = 0; i < 10; i++) {
+            const radius = 15;
+            const x = Math.random() * (canvas.width - radius * 2) + radius;
+            const y = Math.random() * (canvas.height - radius * 2) + radius;
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            balls.push(new Ball(x, y, radius, color));
+        }
+
+        // Create initial stars
+        for (let i = 0; i < 50; i++) {
+            stars.push(new Star());
+        }
+
+        // Create initial waves
+        for (let i = 0; i < 3; i++) {
+            waves.push(new Wave(100 + i * 50));
+        }
+
+        // Button click handlers
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const text = button.textContent;
+                
+                // Reset all animations
+                particles = [];
+                stars = [];
+                waves = [];
+                
+                if (text === 'Enter Site') {
+                    currentAnimation = 'particles';
+                    // Create explosion particles
+                    for (let i = 0; i < 100; i++) {
+                        particles.push(new Particle(canvas.width/2, canvas.height/2, '255, 255, 255'));
+                    }
+                } else if (text === 'Guestbook') {
+                    currentAnimation = 'waves';
+                    // Create waves
+                    for (let i = 0; i < 3; i++) {
+                        waves.push(new Wave(100 + i * 50));
+                    }
+                } else if (text === 'Cool Links') {
+                    currentAnimation = 'starfield';
+                    // Create stars
+                    for (let i = 0; i < 50; i++) {
+                        stars.push(new Star());
+                    }
+                }
+            });
+        });
+
+        // Animation loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            switch(currentAnimation) {
+                case 'bouncing':
+                    balls.forEach(ball => ball.update());
+                    break;
+                case 'particles':
+                    particles = particles.filter(particle => particle.life > 0);
+                    particles.forEach(particle => {
+                        particle.update();
+                        particle.draw();
+                    });
+                    break;
+                case 'starfield':
+                    stars.forEach(star => {
+                        star.update();
+                        star.draw();
+                    });
+                    break;
+                case 'waves':
+                    waves.forEach(wave => {
+                        wave.update();
+                        wave.draw();
+                    });
+                    break;
+            }
+            
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html> 
